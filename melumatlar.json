@@ -1,0 +1,32 @@
+[
+    {
+        "sayi" : 1 ,
+        "kartin_basliqi" : "Naxly as the Winners in <br /> Global Agency Awards",
+        "kartin_yazisi" : "Lorem ipsum is placeholder text <br /> commonly used in print, and <br /> publishing industries for previewing <br /> layouts and visual mockups.",
+        "kartin_sekili" : "https://res.cloudinary.com/do88jgq2l/image/upload/v1690019134/card1_eb6nda.svg"
+    },
+    {
+        "sayi" : 2 ,
+        "kartin_basliqi" : "Expert Prespective <br /> Agency Awards",
+        "kartin_yazisi" : "Lorem ipsum is placeholder text <br /> commonly used in print, and <br /> publishing industries for previewing <br /> layouts and visual mockups.",
+        "kartin_sekili" : "https://res.cloudinary.com/do88jgq2l/image/upload/v1690019188/card2_tanmwn.svg"
+    },
+    {
+        "sayi" : 3 ,
+        "kartin_basliqi" : "Business Prespective <br /> Global Agency Awards",
+        "kartin_yazisi" : "Lorem ipsum is placeholder text <br /> commonly used in print, and <br /> publishing industries for previewing <br /> layouts and visual mockups.",
+        "kartin_sekili" : "https://res.cloudinary.com/do88jgq2l/image/upload/v1690019195/card3_gmtrb5.svg"
+    },
+    {
+        "sayi" : 4 ,
+        "kartin_basliqi" : "Value for Results in <br /> Global Agency Awards",
+        "kartin_yazisi" : "Lorem ipsum is placeholder text <br /> commonly used in print, and <br /> publishing industries for previewing <br /> layouts and visual mockups.",
+        "kartin_sekili" : "https://res.cloudinary.com/do88jgq2l/image/upload/v1690019204/card4_x3y0fw.svg"
+    },
+    {
+        "sayi" : 5 ,
+        "kartin_basliqi" : "Global Experience in <br /> Agency Awards",
+        "kartin_yazisi" : "Lorem ipsum is placeholder text <br /> commonly used in print, and <br /> publishing industries for previewing <br />  layouts and visual mockups.",
+        "kartin_sekili" : "https://res.cloudinary.com/do88jgq2l/image/upload/v1690019209/card5_hrytey.svg"
+    }
+]

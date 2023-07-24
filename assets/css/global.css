@@ -1,0 +1,662 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
+
+
+:root {
+    --header-button : #3A68B8;
+    --ag-reng : #fff;
+    --boz-reng : #aaa;
+    --background-section-rengi : #11162b ;
+    --backgorund-header: #0D101E;
+    --button-yazisina-reng:#70e0e4;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* header hissesi start */
+
+
+.header {
+    background: var(--backgorund-header);
+}
+.navbar {
+    display: flex;
+}
+
+.linkler a {
+    text-decoration: none;
+    color: var(--boz-reng);
+    padding: 15px;
+    margin-left: 10px;
+    font-weight: 500;
+    font-size: 17px;
+    transition: all 0.5s ease;
+}
+
+.linkler a:hover {
+    color: var(--ag-reng);
+    border-bottom: 1px solid;
+
+}
+
+.navbar img {
+    max-width: 100%;
+    height: auto;
+}
+
+.nav-button {
+    background: var(--header-button);
+    color: var(--ag-reng);
+    padding: 7px;
+    border-radius: 10px 20px;
+    border: none;
+    transition: all 0.7s ease;
+}
+
+.nav-button:hover {
+    transform: scale(1.1);
+    border-radius: 7px;
+    color: var(--button-yazisina-reng);
+}
+
+.header i {
+    display: none;
+}
+    @media(max-width:991px) {
+        .navbar {
+            margin: 0 60px;
+        }
+        .linkler a {
+            padding: 0;
+        }
+    }
+
+    @media(max-width:884px) {
+        .linkler a {
+            padding: 0;
+        }
+        .nav-button {
+            margin-left: 5px;
+        }
+    }
+
+    @media(max-width:768px) {
+
+        .header {
+            display: flex;
+        }
+        .header i {
+            color: var(--ag-reng);
+            display: block;
+        }
+        .header i {
+            margin: 30px 30px;
+            font-size: 25px;
+            align-items: center;
+            display: block;
+            cursor: pointer;
+        }
+        .linkler a {
+            display: none;
+        }
+        .nav-button {
+            display: none;
+        }
+
+    }
+    @media(max-width:576px) {
+        
+        .navbar img {
+            width: 100%;
+            margin: 0 -30px;
+        }
+    }
+    @media(max-width:320px) {
+        .navbar img {
+            width: 100%;
+        }
+    }
+
+/* header hissesi end */
+
+
+
+
+/* sign in hissesi start */
+    
+
+
+/* sign in hissesi end */
+
+
+
+/* section orta hisse start */
+
+
+.iki-divi-yan-yana {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.platform-orta-hisse {
+    background: var(--background-section-rengi);
+}
+
+.platform-sol {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.platform-sol h6 {
+    color: var(--header-button);
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 17px;
+}
+
+.platform-sol h2 {
+    color: var(--ag-reng);
+    margin-left: 70px;
+    font-size: 33px;
+    font-weight: 700;
+    padding-top: 15px;
+}
+.platform-sol p {
+    color: var(--ag-reng);
+    transform: translateX(120px);
+    font-weight: 400;
+    padding: 15px 0;
+}
+
+
+.platform-sag {
+    width: 632px;
+    height: 634px;
+}
+
+.platform-sag img {
+    width: 100%;
+    height: 100%;
+    padding-top: 20px;
+}
+
+.section-button {
+    background: var(--header-button);
+    color: var(--ag-reng);
+    border: none;
+    border-radius: 10px;
+    padding: 7px;
+    transition: all 0.7s ease;
+    margin: 5px;
+    text-align: center;
+}
+
+.section-button:hover {
+    transform: scale(1.1);
+    border-radius: 7px;
+    color: var(--button-yazisina-reng);
+}
+
+.platform-buttonlar img {
+    width: 12%;
+}
+
+.swiper-wrapper {
+    padding: 50px 0;
+}
+
+@media(max-width:1200px) {
+    .platform-sol p {
+        transform: translateX(90px);
+
+    }
+}
+
+ @media(max-width:991px) {
+    .platform-sol h2 {
+        font-size: 25px;
+        margin-left: 0;
+    }
+    .platform-sol p {
+        transform: translateX(40px);
+    }
+    .swiper-slide:nth-child(4) {
+        display: none;
+    }
+ }
+ @media(max-width:900px) {
+    .platform-sol p {
+        transform: translateX(35px);
+        padding: 0;
+    }
+ }
+ @media(max-width:900px) {
+    .platform-sol p {
+        transform: translateX(10px);
+        padding: 0;
+    }}
+
+    @media(max-width:884px) {
+        .platform-sol p {
+            transform: translateX(35px);
+            padding: 0;
+        }}
+        @media(max-width:834px) {
+            .platform-sol p {
+                transform: translateX(20px);
+                padding: 0;
+            }}
+        @media(max-width:800px) {
+            .platform-sol p {
+                transform: translateX(15px);
+                padding: 0;
+            }}
+
+ @media(max-width:768px) {
+    .platform-sol p {
+        transform: translateX(35px);
+ }
+ .platform-buttonlar {
+    font-size: 15px;
+ }
+
+ .platform-sag {
+    width: 400px;
+    height: 402px;
+}
+.swiper-slide:nth-child(3) {
+    display: none;
+}
+ }
+ @media(max-width:576px) {
+    .platform-sag {
+        display: none;
+    }
+    .platform-sol {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-top: 10px;
+    }
+    .platform-sol p {
+        transform: translateX(0px);
+        margin: 10px 0;
+    }
+    .platform-buttonlar {
+        font-size: 17px;
+    }
+    .swiper-slide:nth-child(2) {
+        display: none;
+    }
+    .swiper-slide {
+        text-align: center;
+    }
+ }
+/* section orta hisse end */
+
+
+
+
+/* ikinci section start */
+
+.ikinci-section {
+    background: var(--backgorund-header);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.ikinci-section-sol {
+    width: 725px;
+    height: 669px;
+    padding-left: 100px;
+}
+
+.ikinci-section-sol img {
+    width: 100%;
+    height: 100%;
+}
+
+.ikinci-section-sag {
+    width: 45%;
+}
+
+.ikinci-section-sag h2 {
+    color: var(--ag-reng);
+    font-weight: 700;
+    letter-spacing: 2px;
+    padding-left: 5px;
+}
+
+.ikinci-section-sag p {
+    color: var(--boz-reng);
+    font-weight: 400;
+    letter-spacing: 2px;
+    padding: 10px 5px;
+}
+
+
+.ikinci-section-button {
+    background: var(--header-button);
+    color: var(--ag-reng);
+    border: none;
+    border-radius: 10px;
+    padding: 7px;
+    transition: all 0.7s ease;
+}
+
+.ikinci-section-button:hover {
+    transform: scale(1.1);
+    border-radius: 7px;
+    color: var(--button-yazisina-reng);
+}
+
+
+@media(max-width:991px) {
+    .ikinci-section-sol {
+        padding-left: 30px;
+    }
+    .ikinci-section-sag {
+        padding-right: 30px;
+    }
+    .ikinci-section-sag h2 {
+     padding-left: 5px;
+     font-size: 20px;
+     text-align: center;
+    }
+    .ikinci-section-sag p {
+        padding: 10px 5px;
+        font-size: 17px;
+        text-align: center;
+    }
+    .divde-button {
+    padding: 7px;
+    margin-left: 73px;
+    }
+}
+
+@media(max-width:768px) {
+    .ikinci-section-sag h2 {
+        padding-left: 5px;
+        font-size: 20px;
+        text-align: center;
+       }
+       .ikinci-section-sag p {
+           padding: 10px 5px;
+           font-size: 17px;
+           text-align: center;
+       }
+       .divde-button {
+        padding: 7px;
+        margin-left: 55px;
+        }
+}
+
+@media(max-width:576px) {
+    .ikinci-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 25px 0;
+    }
+    .ikinci-section-sol {
+        display: none;
+    }
+    .ikinci-section-sag {
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .ikinci-section-sag h2 {
+        font-size: 18px;
+        text-align: center;
+       }
+    .ikinci-section-sag p {
+        font-size: 15px;
+        text-align: center;
+        padding: 0;
+    }
+    .divde-button {
+        margin-left: 0;
+    }
+}
+@media(max-width:576px) {
+    .ikinci-section-sag {
+        align-items: center;
+        text-align: center;
+    }
+    .ikinci-section-sag h2 {
+        font-size: 16px;
+        align-items: center;
+        text-align: center;
+       }
+    .ikinci-section-sag p {
+        font-size: 15px;
+        text-align: center;
+        padding: 0;
+    }
+}
+
+/* ikinci section end */
+
+
+
+
+
+/* api hissesi start */
+    .api-yeri {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background: var(--backgorund-header);
+        padding: 30px 0;
+    }
+    
+    .kard {
+        border: 2px solid none;
+        border-radius: 10px;
+        background: #181c2e;
+        width: 300px;
+        height: 320px;
+        
+    }
+    
+
+    .kard h4 {
+        color: var(--ag-reng);
+        font-weight: 700;
+        font-size: 24px;
+        margin: 20px 0;
+        text-align: center;
+    }
+
+    .kard p {
+        color: var(--boz-reng);
+        font-weight: 400;
+        font-size: 15px;
+        text-align: center;
+    }
+
+    @media(max-width:1280px) {
+        .kard:nth-child(5) {
+            display: none;
+        }
+    }
+    @media(max-width:991px) {
+        .kard:nth-child(4) {
+            display: none;
+        }
+        .kard {
+            border: 1px solid none;
+            width: 250px;
+            height: 270px;
+        }
+        .kard h4 {
+            color: var(--ag-reng);
+            font-weight: 700;
+            font-size: 20px;
+            margin: 20px 0;
+            text-align: center;
+        }
+    
+        .kard p {
+            font-weight: 400;
+            font-size: 14px;
+            text-align: center;
+        }
+        .kard img {
+            width: 25%;
+            text-align: center;
+        }
+    }
+
+/* api hissesi end */
+
+
+
+
+
+/* ucuncu section (clients hissesi) start */
+
+.client-hissesi {
+    display: flex;
+    justify-content: space-between;
+    background: var(--background-section-rengi);
+}
+
+.clients-yazilar-sol {
+    width: 50%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    transform: translate(100px,100px);
+    
+}
+
+.clients-yazilar-sol h3 {
+    color: var(--ag-reng);
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.clients-yazilar-sol p {
+    color: var(--boz-reng);
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+.clients-sekil-sag {
+    width: 642px;
+    height: 551px;
+    padding: 50px;
+}
+
+.clients-sekil-sag img {
+    width: 100%;
+    height: 100%;
+}
+
+/* ucuncu section (clients hissesi) end */
+
+
+
+
+
+/* footer hissesi start */
+
+.sonluq {
+    background: var(--backgorund-header);  
+    
+}
+
+.uc-div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 70px 20px ;
+}
+
+.birinci-div p {
+    color: var(--boz-reng);
+    font-size: 14px;
+    font-weight: 600;
+    padding-top: 15px;
+}
+
+.adresler {
+    
+    flex-wrap: wrap;
+}
+
+.adresler img,b {
+    color: var(--ag-reng);
+}
+
+.adres-2 {
+    margin: 20px 0;
+}
+
+.orta-div {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    
+}
+
+.orta-div h4 {
+    text-transform: uppercase;
+    color: var(--ag-reng);
+    font-weight: 500;
+    font-size: 16px;
+    padding-left: 5px;
+    padding-bottom: 15px;
+}
+
+.orta-div p {
+    color: var(--boz-reng);
+    font-size: 14px;
+    font-weight: 400;
+    padding: 6px;
+}
+
+.sag-div h4 {
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--ag-reng);
+}
+
+.sag-div p {
+    font-size: 14px;
+    font-weight: 450;
+    color: var(--boz-reng);
+    padding-top: 15px;
+}
+
+.sag-div h5 {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--ag-reng);
+    padding-bottom: 10px;
+}
+
+.sag-div img {
+    padding-left: 5px;
+}
+
+.dil-deyismek {
+    padding-top: 30px;
+}
+/* footer hissesi end */
+
