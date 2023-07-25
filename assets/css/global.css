@@ -209,10 +209,12 @@ body{
     padding: 50px 0;
 }
 
-@media(max-width:1200px) {
+@media(max-width:1280px) {
     .platform-sol p {
-        transform: translateX(90px);
-
+        transform: translateX(95px);
+    }
+    .platform-sag {
+        width: 50%;
     }
 }
 
@@ -222,21 +224,16 @@ body{
         margin-left: 0;
     }
     .platform-sol p {
-        transform: translateX(40px);
+        transform: translateX(70px);
     }
     .swiper-slide:nth-child(4) {
         display: none;
     }
  }
+
  @media(max-width:900px) {
     .platform-sol p {
-        transform: translateX(35px);
-        padding: 0;
-    }
- }
- @media(max-width:900px) {
-    .platform-sol p {
-        transform: translateX(10px);
+        transform: translateX(54px);
         padding: 0;
     }}
 
@@ -462,12 +459,15 @@ body{
     }
     
     .kard {
-        border: 2px solid none;
+        border: none;
         border-radius: 10px;
         background: #181c2e;
         width: 300px;
         height: 320px;
-        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
     }
     
 
@@ -476,25 +476,23 @@ body{
         font-weight: 700;
         font-size: 24px;
         margin: 20px 0;
-        text-align: center;
     }
 
     .kard p {
         color: var(--boz-reng);
         font-weight: 400;
-        font-size: 15px;
-        text-align: center;
+        font-size: 17px;
     }
 
+    
+
     @media(max-width:1280px) {
-        .kard:nth-child(5) {
+        .kard:nth-child(5),
+        .kard:nth-child(4) {
             display: none;
         }
     }
     @media(max-width:991px) {
-        .kard:nth-child(4) {
-            display: none;
-        }
         .kard {
             border: 1px solid none;
             width: 250px;
@@ -518,6 +516,13 @@ body{
             text-align: center;
         }
     }
+
+    @media (max-width: 576px) {
+        .kard:nth-child(2),
+        .kard:nth-child(3) {
+          display: none;
+        }
+      }
 
 /* api hissesi end */
 
@@ -567,6 +572,62 @@ body{
     height: 100%;
 }
 
+@media(max-width:1280px) {
+    .clients-sekil-sag {
+        padding: 100px;
+    }
+    .clients-yazilar-sol h3 {
+        font-size: 25px;
+        letter-spacing: 1px;
+    }
+    .clients-yazilar-sol p {
+        font-size: 15px;
+        letter-spacing: 1px;
+    }
+}
+
+@media(max-width:991px) {
+    .clients-yazilar-sol {
+    width: 50%;
+    height: 20vh;
+    transform: translate(30px,40px);
+    }
+    .clients-yazilar-sol h3 {
+        font-size: 25px;
+        letter-spacing: 1px;
+    }
+    .clients-yazilar-sol p {
+        font-size: 14px;
+        letter-spacing: 1px;
+    }
+}
+@media(max-width:768px) {
+    .clients-sekil-sag  {
+        display: none;
+    }
+    .client-hissesi {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        
+    }
+    .clients-yazilar-sol {
+        height: 50%;
+        padding-top: -40px;
+        transform: translate(7px,7px);
+    }
+}
+@media(max-width:576px) {
+    .clients-yazilar-sol h3 {
+        font-size: 20px;
+        letter-spacing: 1px;
+    }
+    .clients-yazilar-sol p {
+        font-size: 12px;
+        letter-spacing: 1px;
+    }
+}
+
 /* ucuncu section (clients hissesi) end */
 
 
@@ -587,6 +648,11 @@ body{
     padding: 70px 20px ;
 }
 
+.sol-div {
+    padding: auto;
+    line-height: 24px;
+}
+
 .birinci-div p {
     color: var(--boz-reng);
     font-size: 14px;
@@ -603,14 +669,17 @@ body{
     color: var(--ag-reng);
 }
 
-.adres-2 {
-    margin: 20px 0;
+.adres{
+    margin: 40px 0;
 }
 
 .orta-div {
     display: flex;
     justify-content: space-around;
+    align-items: center;
+    /* text-align: center; */
     width: 50%;
+    padding-top: 30px;
     
 }
 
@@ -628,6 +697,9 @@ body{
     font-size: 14px;
     font-weight: 400;
     padding: 6px;
+}
+.sag-div{
+    line-height: 35px;
 }
 
 .sag-div h4 {
@@ -658,5 +730,49 @@ body{
 .dil-deyismek {
     padding-top: 30px;
 }
+
+
+@media(max-width:991px) {
+    .sol-div {
+        line-height: 17px;
+    }
+    .uc-div {
+        padding: 50px 10px;
+    }
+    .adresler {
+        font-size: 14px;
+    }
+   .information {
+    line-height: 25px;
+   }
+}
+@media(max-width:850px) {
+    .uc-div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 10px 5px;
+    }
+    .information {
+        line-height: 21px;
+    }
+
+}
+@media(max-width:768px) {
+    .information {
+        line-height: 24px;
+    }
+}
+@media(max-width:576px) {
+    .information {
+        line-height: 40px;
+    }
+    .orta-div {
+        padding: 10px;
+      flex-wrap: wrap;
+}
+}
+
 /* footer hissesi end */
 
