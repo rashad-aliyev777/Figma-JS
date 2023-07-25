@@ -1,4 +1,5 @@
 
+
 // sign in hissesi
 
 const signInButton = document.querySelector('.nav-button');
@@ -67,3 +68,6 @@ const swiper = new Swiper(".mySwiper", {
         console.log(xeta)
   }
 }
+
+// AOS paket
+AOS.init();
