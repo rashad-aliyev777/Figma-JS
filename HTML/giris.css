@@ -1,0 +1,309 @@
+@import url(./reset.css);
+
+
+/* kolgeli yazi */
+
+@import url("https://fonts.googleapis.com/css?family=Raleway");
+
+:root{
+    --glow-color: hsl(0, 85%, 52%);
+}
+*{
+    box-sizing: border-box;
+}
+
+.glowing-btn{
+    position: relative;
+    color: var(--glow-color);
+    cursor: pointer;
+    padding: 0.35em 1em;
+    border: 0.15em solid var(--glow-color);
+    border-radius: 0.45em;
+    background: none;
+    perspective: 2em;
+    font-family: "Raleway", sans-serif;
+    font-size: 2em;
+    font-weight: 900;
+    letter-spacing: 1em;
+    -webkit-box-shadow: inset 0px 0px 0.5em 0px var(--glow-color), 0px 0px 0.5em 0px var(--glow-color);
+    -moz-box-shadow: inset 0px 0px 0.5em 0px var(--glow-color), 0px 0px 0.5em 0px var(--glow-color);
+    box-shadow: inset 0px 0px 0.5em 0px var(--glow-color), 0px 0px 0.5em 0px var(--glow-color);
+    animation: border-flicker 2s linear infinite;
+}
+.glowing-word{
+    float: left;
+    margin-right: -0.8em;
+    -webkit-text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em var(--glow-color);
+    -moz-text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em var(--glow-color);
+    text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em var(--glow-color);
+    animation: text-flicker 3s linear infinite;
+}
+.faulty-letter{
+    opacity: 0.5;
+    animation: faulty-flicker 2s linear infinite;
+}
+.glowing-btn::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0.7;
+    filter: blur(1em);
+    transform: translateY(120%) rotateX(95deg) scale(1, 0.35);
+    background: var(--glow-color);
+    pointer-events: none;
+}
+.glowing-btn::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    z-index: -1;
+    background-color: var(--glow-color);
+    box-shadow: 0 0 2em 0.2em var(--glow-color);
+    transition: opacity 100ms linear;
+}
+.glowing-btn:hover{
+    color: rgba(0, 0, 0, 0.8);
+    text-shadow: none;
+    animation: none;
+}
+.glowing-btn:hover .glowing-word{
+    animation: none;
+}
+.glowing-btn:hover .faulty-letter{
+    animation: none;
+    text-shadow: none;
+    opacity: 1;
+}
+.glowing-btn:hover:before{
+    filter: blur(1.5em);
+    opacity: 1;
+}
+.glowing-btn:hover:after{
+    opacity: 1;
+}
+@keyframes faulty-flicker{
+    0%{
+        opacity: 0.1;
+    }
+    2%{
+        opacity: 0.1;
+    }
+    4%{
+        opacity: 0.5;
+    }
+    19%{
+        opacity: 0.5;
+    }
+    21%{
+        opacity: 0.1;
+    }
+    23%{
+        opacity: 1;
+    }
+    80%{
+        opacity: 0.5;
+    }
+    83%{
+        opacity: 0.4;
+    }
+    87%{
+        opacity: 1;
+    }
+}
+@keyframes text-flicker{
+    0%{
+        opacity: 0.1;
+    }
+    2%{
+        opacity: 1;
+    }
+    8%{
+        opacity: 0.1;
+    }
+    9%{
+        opacity: 1;
+    }
+    12%{
+        opacity: 0.1;
+    }
+    20%{
+        opacity: 1;
+    }
+    25%{
+        opacity: 0.3;
+    }
+    30%{
+        opacity: 1;
+    }
+    70%{
+        opacity: 0.7;
+    }
+    72%{
+        opacity: 0.2;
+    }
+    77%{
+        opacity: 0.9;
+    }
+    100%{
+        opacity: 0.9;
+    }
+}
+@keyframes border-flicker{
+    0%{
+        opacity: 0.1;
+    }
+    2%{
+        opacity: 1;
+    }
+    4%{
+        opacity: 0.1;
+    }
+    8%{
+        opacity: 1;
+    }
+    70%{
+        opacity: 0.7;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@media only screen and (max-width: 600px){
+    .glowing-btn {
+        font-size: 1em;
+    }
+}
+
+
+
+
+
+/* kolgeli yazi */
+
+.qeydiyyat {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(to right, #bdc3c7, #2c3e50); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  align-items: center;
+  flex-direction: column;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-bottom: 0.4em;
+    background-color: #171717;
+    border-radius: 25px;
+    transition: .4s ease-in-out;
+    margin-top: 15px;
+    z-index: 1;
+  }
+  
+  .form:hover {
+    transform: scale(1.05);
+    border: 1px solid black;
+  }
+  
+  #heading {
+    text-align: center;
+    margin: 2em;
+    color: rgb(255, 255, 255);
+    font-size: 1.2em;
+  }
+  
+  .field {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5em;
+    border-radius: 25px;
+    padding: 0.6em;
+    border: none;
+    outline: none;
+    color: white;
+    background-color: #171717;
+    box-shadow: inset 2px 5px 10px rgb(5, 5, 5);
+  }
+  
+  .input-icon {
+    height: 1.3em;
+    width: 1.3em;
+    fill: white;
+  }
+  
+  .input-field {
+    background: none;
+    border: none;
+    outline: none;
+    width: 100%;
+    color: #d3d3d3;
+  }
+  
+  .form .btn {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 2.5em;
+  }
+  
+  .button1 {
+    padding: 0.5em;
+    padding-left: 1.1em;
+    padding-right: 1.1em;
+    border-radius: 5px;
+    margin-right: 0.5em;
+    border: none;
+    outline: none;
+    transition: .4s ease-in-out;
+    background-color: #252525;
+    color: white;
+  }
+  
+  .button1:hover {
+    background-color: black;
+    color: white;
+  }
+  
+  .button2 {
+    padding: 0.5em;
+    padding-left: 2.3em;
+    padding-right: 2.3em;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    transition: .4s ease-in-out;
+    background-color: #252525;
+    color: white;
+  }
+  
+  .button2:hover {
+    background-color: black;
+    color: white;
+  }
+  
+  .button3 {
+    margin-bottom: 3em;
+    padding: 0.5em;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    transition: .4s ease-in-out;
+    background-color: #252525;
+    color: white;
+  }
+  
+  .button3:hover {
+    background-color: red;
+    color: white;
+  }

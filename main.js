@@ -1,5 +1,7 @@
 
 
+
+
 // sign in hissesi
 
 const signInButton = document.querySelector('.nav-button');
@@ -71,3 +73,16 @@ const swiper = new Swiper(".mySwiper", {
 
 // AOS paket
 AOS.init();
+
+// overlay menyu
+const iconunOzu = document.querySelector('.fa-bars')
+const xIconu = document.querySelector('.fa-xmark')
+const overlayDivi = document.querySelector('.overlay')
+
+  iconunOzu.addEventListener('click',() => {
+    overlayDivi.style.width = "100%"
+})
+
+  xIconu.addEventListener('click',() => {
+    overlayDivi.style.width = "0"
+})

@@ -10,9 +10,64 @@
     --button-yazisina-reng:#70e0e4;
 }
 
+a {
+    text-decoration: none;
+}
+
 body{
     font-family: 'Open Sans', sans-serif;
+    
 }
+
+
+
+/* overlay menyu start */
+
+.overlay {
+    background: rgba(0,0,0,.8);
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    width: 0;
+    overflow-x: hidden;
+    transition: width 1s ease;
+    z-index: 2;
+}
+
+.navbar-linkler {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.navbar-linkler a {
+    color: var(--boz-reng);
+    font-size: 35px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 500;
+    margin-top: 15px;
+    transition: all 1s ease;
+}
+
+.navbar-linkler a:hover {
+    transform: translateX(100px);
+    color: var(--ag-reng);
+}
+
+.fa-xmark {
+    position: absolute;
+    right: 40px;
+    top: 40px;
+    color: var(--ag-reng);
+    cursor: pointer;
+    font-size: 35px;
+
+}
+
+/* overlay menyu end */
+
 
 /* header hissesi start */
 
@@ -45,7 +100,7 @@ body{
     height: auto;
 }
 
-.nav-button {
+.nav-button button {
     background: var(--header-button);
     color: var(--ag-reng);
     padding: 7px;
@@ -54,13 +109,13 @@ body{
     transition: all 0.7s ease;
 }
 
-.nav-button:hover {
+.nav-button button:hover {
     transform: scale(1.1);
     border-radius: 7px;
     color: var(--button-yazisina-reng);
 }
 
-.header i {
+.fa-bars {
     display: none;
 }
     @media(max-width:991px) {
@@ -86,11 +141,11 @@ body{
         .header {
             display: flex;
         }
-        .header i {
+        .fa-bars {
             color: var(--ag-reng);
             display: block;
         }
-        .header i {
+        .fa-bars {
             margin: 30px 30px;
             font-size: 25px;
             align-items: center;
@@ -239,17 +294,17 @@ body{
 
     @media(max-width:884px) {
         .platform-sol p {
-            transform: translateX(35px);
+            transform: translateX(50px);
             padding: 0;
         }}
         @media(max-width:834px) {
             .platform-sol p {
-                transform: translateX(20px);
+                transform: translateX(42px);
                 padding: 0;
             }}
         @media(max-width:800px) {
             .platform-sol p {
-                transform: translateX(15px);
+                transform: translateX(35px);
                 padding: 0;
             }}
 
@@ -697,7 +752,16 @@ body{
     font-size: 14px;
     font-weight: 400;
     padding: 6px;
+    transition: all 0.4s ease;
+
 }
+
+/* animate__flipInX */
+
+.orta-div p:hover {
+    color: var(--ag-reng);
+}
+
 .sag-div{
     line-height: 35px;
 }
