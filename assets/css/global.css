@@ -20,7 +20,6 @@ body{
 }
 
 
-
 /* overlay menyu start */
 
 .overlay {
@@ -54,6 +53,7 @@ body{
 .navbar-linkler a:hover {
     transform: translateX(100px);
     color: var(--ag-reng);
+    
 }
 
 .fa-xmark {
@@ -91,7 +91,7 @@ body{
 
 .linkler a:hover {
     color: var(--ag-reng);
-    border-bottom: 1px solid;
+    border-bottom: 3px dotted  ;
 
 }
 
@@ -107,6 +107,7 @@ body{
     border-radius: 10px 20px;
     border: none;
     transition: all 0.7s ease;
+    margin-left: 13px;
 }
 
 .nav-button button:hover {
