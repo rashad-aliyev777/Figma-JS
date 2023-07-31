@@ -116,6 +116,22 @@ body{
     color: var(--button-yazisina-reng);
 }
 
+.youtube-linki {
+    display: flex;
+    justify-content: center;
+    z-index: 2;
+    position: relative;
+    display: none;
+}
+
+.youtube-linki iframe {
+    position: absolute;
+    left: 30%;
+    top: 150px;
+    transition: 1s ease;
+    border-radius: 20px;
+}
+
 .fa-bars {
     display: none;
 }
@@ -175,16 +191,6 @@ body{
     }
 
 /* header hissesi end */
-
-
-
-
-/* sign in hissesi start */
-    
-
-
-/* sign in hissesi end */
-
 
 
 /* section orta hisse start */

@@ -1,18 +1,4 @@
 
-
-
-
-// sign in hissesi
-
-const signInButton = document.querySelector('.nav-button');
-const girisFormu = document.querySelector('.form');
-
-signInButton.addEventListener('click', () => {
-  girisFormu.style.display = 'block'; 
-});
-
-
-
 // Swiper JS 
 
 const swiper = new Swiper(".mySwiper", {
